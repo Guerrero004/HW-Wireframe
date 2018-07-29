@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="reset.css">
     <title>About Me</title>
+
 </head>
 <body>
     <header id="masthead">
@@ -18,17 +19,31 @@
     </header>
     <div id="main-container" class="container">
         <section class="main-container">
-            <H1>About Me</H1>
-            <img src="https://scontent.fphx1-1.fna.fbcdn.net/v/t1.0-9/531017_440390792684482_1590939597_n.jpg?_nc_cat=0&oh=6047ee37e73aec94d72d65a7715e9b92&oe=5BCFCAE5"
-            class="auth-image" alt="me">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-            Quos, dolorum unde ad facere et rerum necessitatibus veritatis 
-            voluptates eligendi facilis aliquam quibusdam iusto molestias 
-            consectetur repellat voluptatem eaque accusamus veniam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Impedit, sunt modi? Totam dolores, cupiditate, iste perferendis
-            cumque omnis dicta dignissimos in quas quasi mollitia eveniet,
-            veniam nemo. Asperiores, impedit ullam!</p>
+            <H1>Contact</H1>
+            <form id="contact-form">
+                <ul>
+                    <li>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="
+                        name" placeholder="John Smith"
+                        required="required"> 
+                    </li>
+                    <li>
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="
+                            name" placeholder="example@gmail.com"
+                            required="required"> 
+                        </li>
+                        <li>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message"
+                            required="required"></textarea>
+                        </li>
+                </ul>
+                <input type="submit" name="submit">
+
+
+            </form>
         </section>
         <section class="sidebar">
             <div id="connect">
