@@ -88,7 +88,7 @@ nav a:first-child {
 
 /* main section */
 
-#main-container {
+#main-section {
     padding-top: 130px;
 }
 
@@ -119,6 +119,7 @@ nav a:first-child {
     float: right;
     border: 1px solid #ddd;
     margin-bottom: 20px;
+    float: up;
 }
 
 h3, .sidebar, h2 {
@@ -169,3 +170,119 @@ footer {
     opacity: .8;
 }
 
+.work h3 {
+    border-bottom: 0;
+    background: #4aaaa5;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    padding: 15px;
+    width: 100%;
+    line-height: 30px;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+#contact-form ul {
+    margin-bottom: 20px;
+}
+
+#contact-form li {
+    margin-bottom: 10px;
+}
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+    display: block;
+    width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea{
+    height: 35px;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+textarea {
+    height: 200px;
+}
+
+input[type=sumbit] {
+    background: #4aaaa5;
+    border: 0 none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 980px) {
+    .container {
+        padding: 0 20px;
+        max-width: 768px;
+    }
+    #main-container {
+        padding-top: 130px;
+    }
+    .main-section{
+        max-width: 420px;
+    }
+    .work {
+        width: 100%;
+    }
+
+    .auth-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-section, .sidebar {
+        max-width: 100%;
+    }
+    #main-container {
+        overflow: auto;
+    }
+    .sidebar {
+        margin-bottom: 40px;
+    }
+    .work {
+        width: 47%;
+        margin-bottom: 10px;
+    }
+    .work:nth-child(even) {
+        margin-right: 0;
+    }
+    .work:nth-child(odd) {
+        float: right;
+    }
+    .auth-image {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 640px) {
+    #masthead {
+        position: static;
+        margin-bottom: 20px;
+    }
+    header.container {
+        padding: 0;
+    }
+    nav {
+        text-align: center;
+        width: 100%;
+        margin: 15px 0;    
+    }
+    nav a {
+        width: 30%;
+        padding-left: 0;
+        margin-left: 0;
+    }
+}
